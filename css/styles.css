@@ -192,3 +192,131 @@ a {
 .login-form a:active {
 	text-decoration: none;
 }
+
+/* ----- Сеточные стили ----- */
+
+html,
+body {
+	min-width: 1122px;
+	min-height: 1750px;
+}
+
+.container {
+	width: 940px;
+	margin: 0 auto;
+	padding: 0 10px;
+}
+
+.main-header {
+	margin-bottom: 75px;
+}
+
+.main-nav {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: transparent;
+}
+
+.main-logo {
+	order: 2;
+	width: 371px;
+	height: 155px;
+}
+
+.nav-menu {
+	width: 620px;
+	margin: 0;
+	padding: 0;
+
+	list-style: none;
+}
+
+.user-nav-menu {
+	width: 140px;
+	margin: 0;
+	padding: 0;
+
+	list-style: none;
+}
+
+.nav-menu-wrapper {
+	width: 100%;
+	margin-bottom: 60px;
+	background-color: #000;
+}
+
+.nav-menu-wrapper .container {
+	display: flex;
+	justify-content: space-between;
+}
+
+.features {
+	margin-bottom: 80px;
+}
+
+.features-list {
+	display: flex;
+	justify-content: space-between;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.features-list-item {
+	
+}
+
+.styled-block {
+	display: flex;
+	justify-content: space-between;
+	padding: 50px 80px;
+	margin-bottom: 40px;
+}
+
+.news {
+	width: 380px;
+}
+
+.gallery {
+	width: 300px;
+}
+
+.news-list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.contacts {
+	width: 380px;
+}
+
+.appointment {
+	width: 300px;
+}
+
+.main-footer {
+	margin-top: 65px;
+	padding-top: 60px;
+}
+
+.footer-contacts {
+	margin: 0;
+	margin-right: 80px;
+	width: 320px;
+}
+
+.footer-social {
+	width: 145px;
+}
+
+.footer-copyright {
+	margin: 0;
+	margin-left: auto;
+	width: 150px;
+}
+
+.main-footer .container {
+	display: flex;
+}
