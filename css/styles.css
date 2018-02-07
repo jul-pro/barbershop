@@ -502,6 +502,28 @@ body {
 
 }
 
+.nav-menu-current {
+	position: relative;
+}
+
+.nav-menu .nav-menu-current::after {
+	content: "";
+	
+	position: absolute;
+	left: 20px;
+	right: 20px;
+	bottom: 0;
+
+	height: 4px;
+
+	background-color: #fff;
+
+}
+
+.nav-menu a:not([href]) {
+	background-color: #000;
+}
+
 .user-nav-menu {
 	display: flex;
 	max-width: 140px;
