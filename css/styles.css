@@ -1,4 +1,6 @@
 body {
+	min-width: 1122px;
+
 	margin: 0;
 	padding: 0;
 
@@ -462,12 +464,6 @@ input[type="checkbox"]:checked + .login-checkbox .checkbox-indicator:after {
 
 /* ----- Сеточные стили ----- */
 
-html,
-body {
-	min-width: 1122px;
-	min-height: 1730px;
-}
-
 .container {
 	width: 940px;
 	margin: 0 auto;
@@ -729,4 +725,120 @@ body {
 
 .main-footer .container {
 	display: flex;
+}
+
+.inner-page {
+	color: #000;
+
+	background-color: #f8f5f2;
+	background-image: url("../img/block-bg.jpg");
+	background-repeat: repeat;
+	background-position: 0 0;
+}
+
+.inner-page .main-header {
+	margin-bottom: 49px;
+	background-color: #000;
+}
+
+.inner-page .main-nav {
+	flex-direction: row;
+}
+
+.inner-page .nav-logo {
+	width: 111px;
+	height: 24px;
+
+	padding: 23px 20px;
+}
+
+.inner-page .user-nav-menu {
+  margin-left: auto;
+}
+
+.page-title {
+	margin: 0;
+	margin-bottom: 15px;
+	padding: 0;
+
+	font-size: 30px;
+	line-height: 42px;
+}
+
+.breadcrumbs {
+	margin: 0;
+	padding: 0;
+	margin-bottom: 50px;
+
+	list-style: none;
+}
+
+.catalog-columns {
+	display: flex;
+	justify-content: space-between;
+}
+
+.filters {
+	width: 220px;
+}
+
+.filter fieldset {
+	margin: 0;
+	margin-bottom: 50px;
+	padding: 0;
+
+	border: 0;
+}
+
+.filter legend {
+	padding: 0;
+	font-size: 24px;
+	line-height: 30px;
+}
+
+.filter ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.catalog {
+	width: 700px;
+}
+
+.catalog-list {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-end;
+	
+	margin: 0;
+	margin-bottom: 25px;
+	padding: 0;
+
+	list-style: none;	
+}
+
+.catalog-item {
+	width: 220px;
+	margin-bottom: 20px;
+	margin-right: 20px;
+}
+
+.catalog-item:nth-child(3n) {
+	margin-right: 0;
+}
+
+.pagination-list {
+	height: 43px;
+	margin: 0;
+
+	padding: 0;
+
+	list-style: none;
+
+}
+
+
+.inner-page .main-footer {
+	margin-top: 50px;
 }
