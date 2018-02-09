@@ -766,11 +766,46 @@ input[type="checkbox"]:checked + .login-checkbox .checkbox-indicator:after {
 }
 
 .breadcrumbs {
+	line-height: 20px;
+}
+
+.breadcrumbs {
+	display: flex;
 	margin: 0;
 	padding: 0;
 	margin-bottom: 50px;
 
 	list-style: none;
+}
+
+.breadcrumbs a {
+	position: relative;
+	margin-right: 40px;
+
+	line-height: 20px;
+}
+
+.breadcrumbs a::after {
+	content: "";
+
+	position: absolute;
+	right: -24px;
+	bottom: 5px;
+
+	width: 8px;
+	height: 8px;
+
+	background-color: #000;
+
+	transform: rotate(45deg);
+}
+
+.breadcrumbs a {
+	color: #000;
+}
+
+.breadcrumbs li:last-child {
+	color: #aba9a7;
 }
 
 .catalog-columns {
@@ -784,7 +819,7 @@ input[type="checkbox"]:checked + .login-checkbox .checkbox-indicator:after {
 
 .filter fieldset {
 	margin: 0;
-	margin-bottom: 50px;
+	margin-bottom: 30px;
 	padding: 0;
 
 	border: 0;
@@ -792,6 +827,8 @@ input[type="checkbox"]:checked + .login-checkbox .checkbox-indicator:after {
 
 .filter legend {
 	padding: 0;
+	margin-bottom: 30px;
+
 	font-size: 24px;
 	line-height: 30px;
 }
@@ -802,6 +839,73 @@ input[type="checkbox"]:checked + .login-checkbox .checkbox-indicator:after {
 	list-style: none;
 }
 
+.filter-option {
+	margin-bottom: 20px;
+	line-height: 18px;
+}
+
+.filter-option label {
+	position: relative;
+	padding-left: 45px;
+}
+
+.filter-option label:hover,
+.filter-option label:focus {
+	color: #663d15
+}
+
+input[type="checkbox"] + .checkbox-indicator,
+input[type="radio"] + .radio-indicator {
+	position: absolute;
+
+	left: 0;
+
+	width: 18px;
+	height: 18px;
+
+	border: 2px solid #000;
+}
+
+input[type="radio"] + .radio-indicator {
+	border-radius: 50%;
+}
+
+input[type="checkbox"]:focus + .checkbox-indicator,
+input[type="radio"]:focus + .radio-indicator {
+	border-color: #663d15;
+	outline: thin dotted;
+	outline: 5px auto -webkit-focus-ring-color;
+}
+
+
+input[type="checkbox"]:checked + .checkbox-indicator::before,
+input[type="checkbox"]:checked + .checkbox-indicator::after {
+	content: "";
+	position: absolute;
+
+	top: 8px;
+	left: 1px;
+
+	width: 15px;
+	height: 2px;
+
+	background-color: #000;
+}
+
+input[type="radio"]:checked + .radio-indicator::before {
+	content: "";
+	position: absolute;
+	
+	top: 6px;
+	left: 6px;
+
+	width: 6px;
+	height: 6px;
+
+	background-color: #000;
+	border-radius: 50%;
+}
+
 .catalog {
 	width: 700px;
 }
@@ -809,7 +913,7 @@ input[type="checkbox"]:checked + .login-checkbox .checkbox-indicator:after {
 .catalog-list {
 	display: flex;
 	flex-wrap: wrap;
-	align-items: flex-end;
+	/*align-items: flex-end;*/
 	
 	margin: 0;
 	margin-bottom: 25px;
@@ -819,25 +923,126 @@ input[type="checkbox"]:checked + .login-checkbox .checkbox-indicator:after {
 }
 
 .catalog-item {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+
 	width: 220px;
 	margin-bottom: 20px;
 	margin-right: 20px;
+
+	background-color: #fff;
+	box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.catalog-item:hover {
+	box-shadow: 0 0 25px rgba(0, 0, 0, 0.3)
 }
 
 .catalog-item:nth-child(3n) {
 	margin-right: 0;
 }
 
+.catalog-item h3, 
+.catalog-item p {
+	
+	margin: 0;
+	margin-left: 15px;
+	margin-right: 15px;
+	margin-bottom: 15px;
+	padding: 0;
+
+
+	font-size: 14px;
+	line-height: 18px;
+}
+
+.catalog-item a {
+	color: #000;
+}
+
+.catalog-item span {
+	display: block;
+}
+
+.catalog-item .catalog-item-image {
+	order: -1;
+	margin: 0;
+	margin-bottom: 15px;
+}
+
+.catalog-item-price {
+	display: flex;
+	height: 43px;
+	align-items: stretch;
+
+}
+
+.catalog-item-price b {
+	display: flex;
+	flex-direction: column;
+	width: 109px;	
+	/*padding-top: 11px;*/
+
+	line-height: 20px;
+	text-align: center;
+	justify-content: center;
+
+	background-color: #e5e5e5;
+}
+
+.catalog-item-price .button {
+	width: 78px;
+
+	margin: 0;
+	padding: 0;
+	padding-top: 11px;
+
+	color: #fff;
+
+	line-height: 20px;
+}
+
+.catalog-category {
+	text-transform: none;
+}
+
 .pagination-list {
+	display: flex;
 	height: 43px;
 	margin: 0;
-
 	padding: 0;
 
 	list-style: none;
 
 }
 
+.pagination-item .button {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
+	margin: 0;
+	margin-right: 7px;
+	padding: 0;
+	
+	width: 43px;
+	height: 43px;
+}
+
+.pagination-item-current a {
+	color: #000;
+	background-color: #fff;
+}
+
+.pagination-item-current a:hover {
+	color: #000;
+	background-color: #fff;
+}
 
 .inner-page .main-footer {
 	margin-top: 50px;
