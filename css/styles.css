@@ -1,3 +1,7 @@
+html, body {
+	height: 100%;
+}
+
 body {
 	min-width: 1122px;
 
@@ -22,7 +26,7 @@ a {
 }
 
 img {
-	width: 100%
+	width: 100%;
 	height: auto;
 }
 
@@ -465,6 +469,7 @@ input[type="checkbox"]:checked + .login-checkbox .checkbox-indicator:after {
 /* ----- Сеточные стили ----- */
 
 .container {
+
 	width: 940px;
 	margin: 0 auto;
 	padding: 0 10px;
@@ -1047,3 +1052,211 @@ input[type="radio"]:checked + .radio-indicator::before {
 .inner-page .main-footer {
 	margin-top: 50px;
 }
+
+.catalog-item-columns {
+	display: flex;
+	justify-content: space-between;
+}
+
+.product-photos {
+	width: 460px;
+}
+
+.product-info {
+	width: 390px;
+}
+
+.product-photo-full {
+	margin: 0;
+	padding: 0;
+
+	line-height: 0;
+
+	box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.product-photo-preview {
+	display: flex;
+	flex-wrap: wrap;
+
+	margin: 0;
+	padding: 0;
+
+	list-style: none;
+}
+
+.product-photo-preview li {
+	width: 140px;
+	height: 149px;
+	margin-right: 20px;
+	margin-top: 20px;
+
+	box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+	
+}
+
+.product-photo-preview li:hover,
+.product-photo-preview li:focus {
+	box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
+}
+
+.product-photo-preview li:nth-child(3n) {
+	margin-right: 0;
+}
+
+.store-info {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 6px;
+}
+
+.article {
+	color: #aeaeae;
+}
+
+
+.product-info .catalog-item-price {
+	margin-top: 35px;
+	margin-bottom: 65px;
+}
+
+.product-info h3 {
+	font-size: 24px;
+	line-height: 30px;
+}
+
+.diamond-list,
+.diamond-list-ext {
+	margin: 14px 0;
+	padding: 0;
+
+	list-style: none;
+}
+
+.diamond-list li,
+.diamond-list-ext li {
+	position: relative;
+	padding-left: 20px;
+}
+
+.diamond-list-ext li {
+	margin-bottom: 13px;
+}
+
+.diamond-list li::before,
+.diamond-list-ext li::before {
+	position: absolute;
+	content: "";
+
+	top: 8px;
+	left: 0;
+	width: 8px;
+	height: 8px;
+
+	background-color: #000;
+
+	transform: rotate(45deg);
+}
+
+
+.inner-content .big-header {
+	/*position: relative;*/
+	display: flex;
+	align-items: center;
+
+	margin-top: 55px;
+	margin-bottom: 65px;
+
+	font-size: 48px;
+	line-height: 48px;
+	text-align: center;
+}
+
+.inner-content .big-header::before,
+.inner-content .big-header::after {
+	content: "";
+	
+	flex-grow: 1;
+
+	width: 50px;
+	height: 2px;
+
+	background-color: #000;
+}
+
+.inner-content .big-header::before {
+	margin-right: 25px;
+}
+
+.inner-content .big-header::after {
+	margin-left: 25px;
+}
+
+.inner-content h2 {
+	margin-top: 60px;
+	margin-bottom: 30px;
+
+	font-size: 24px;
+	line-height: 30px;
+}
+
+.inner-content h3 {
+	margin-top: 60px;
+	margin-bottom: 30px;
+
+	font-size: 20px;
+	line-height: 24px;
+}
+
+.inner-content p {
+	margin: 14px 0;
+}
+
+.inner-content h2 + h3 {
+	margin-top: 30px;
+}
+
+.inner-content table {
+	border-collapse: collapse;
+}
+
+.inner-content td {
+	padding: 10px 15px;
+	border: 2px solid #000;
+}
+
+.table-ext {
+	width: 100%;
+}
+
+.table-ext td {
+	width: 50%;
+}
+
+.table-ext td:last-child {
+	text-align: center;
+}
+
+.content-columns {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.column-2 {
+	width: 460px;
+}
+
+.column-2 p:first-child {
+	margin-top: 0;
+}
+
+.column-2 p:last-child {
+	margin-bottom: 0;
+}
+
+.content-columns > h2 {
+	width: 460px;
+	margin-right: 460px;
+}
+
